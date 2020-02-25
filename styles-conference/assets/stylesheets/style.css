@@ -1,0 +1,288 @@
+/* 
+———————————————————————————————————————————————————————————
+GRID
+——————————————————————————————————————————————————————————— 
+*/
+
+*,
+*:before,
+*::after {
+    -webkit-box-sizing: border-box;   
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container {
+    padding: 0 30px;
+}
+
+.grid,
+.container {
+    margin: o auto;
+    width: 960px;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding: 0 15px;
+}
+
+html {
+    color: #555;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+CLEARFIX 
+——————————————————————————————————————————————————————————— 
+*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+ROWS 
+——————————————————————————————————————————————————————————— 
+*/
+
+.row {
+    min-width: 960px;
+    background: #fff;
+    padding: 66px 0 44px 0;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+TYPOGRAPHY 
+——————————————————————————————————————————————————————————— 
+*/
+
+body {
+    background-color: #293f50;
+    color: #888;
+    font: 300 16px/22px "Lato","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 22px;
+}
+
+h1, 
+h2,
+h3,
+h4 {
+    color: #648880;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9b2b9;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, 
+em {
+    font-style: italic;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+LINKS 
+——————————————————————————————————————————————————————————— 
+*/
+
+a {
+    color: #648880;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a9b2b9;
+}
+
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+    color: #648880;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+BUTTONS 
+——————————————————————————————————————————————————————————— 
+*/
+
+.btn {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin:0; 
+}
+
+.btn-alt {
+    border: 1px solid #dfe2e5;
+    padding: 10px 30px;
+}
+
+.btn-alt:hover{
+    background-color: #fff;
+    color: #648880;
+}
+
+
+/* 
+———————————————————————————————————————————————————————————
+HOME 
+——————————————————————————————————————————————————————————— 
+*/
+
+.hero {
+    padding: 22px 80px 66px 80px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+Primary Header 
+——————————————————————————————————————————————————————————— 
+*/
+
+.logo {
+    border-top: 4px solid #648880;
+    padding: 40px 0 22px 0;
+    float: left;
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    margin: 66px 0 22px 0;
+    text-align: right;
+}
+
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav {
+    text-align: right;
+}
+
+
+
+/* 
+———————————————————————————————————————————————————————————
+Primary Footer 
+——————————————————————————————————————————————————————————— 
+*/
+.primary-footer small {
+    float: left;
+    font-weight: 400;
+}
+
+.primary-footer {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    font-size: 14px;
+    color: #648880;
+}
